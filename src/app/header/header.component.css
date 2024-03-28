@@ -1,0 +1,8 @@
+.custcolor {
+    color: white;
+    font-weight: 100;
+    font-size: medium
+}
+.nav-link:hover{
+    background-color: rgba(240, 248, 255, 0.078);
+}

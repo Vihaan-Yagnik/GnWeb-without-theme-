@@ -1,0 +1,20 @@
+<div class="col bg-light mx-2 p-2">
+    <span class=""><b> <i class="fa fa-list"></i>
+        <span [innerHTML]="info.heading"></span>
+    </b>
+    </span>
+    <hr>
+    <div *ngFor="let info of info.infos" style="color:blue" class="border-bottom border-primary">
+        {{info.title}}
+        <span>
+            <h2>
+                {{info.desc}}
+            </h2>
+        </span>
+    </div>
+    <div class="mt-3">
+        <div *ngFor="let info of info.units" style="color: rgb(47, 134, 227);"> 
+            {{info.title}} : {{info.value}}
+        </div>
+    </div>
+</div>

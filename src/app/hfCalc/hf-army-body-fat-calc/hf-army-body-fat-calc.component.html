@@ -1,0 +1,112 @@
+<div style="background-color: aquamarine;">
+    <div class="container">
+        <div class="row bg-light my-3">
+            <h1>
+                <b>
+                    Calculate Army Body Fat
+                </b>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-9">
+                <div class="row bg-light my-3 py-3">
+                    <div class="row">
+                        <h4><i class="fa fa-person"></i> Calculate Day From Date</h4>
+                    </div>
+                    <div class="row lh-lg">
+                        <div class="row">
+                            <div class="col-2">
+                                <input type="radio" name="Male" id="1" value="male"> Male
+                            </div>
+                            <div class="col-2">
+                                <input type="radio" name="Male" id="1" value="female"> Female
+                            </div>
+                            <div class="col">
+                                Height
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" aria-label="Username"
+                                        aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                Unit
+                                <select class="form-control">
+                                    <option>in</option>
+                                    <option>cm</option>
+                                    <option>m</option>
+                                    <option>ft</option>
+                                    <option>yd</option> 
+                                </select>
+                            </div>
+                            <div class="col">
+                                Neck
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" aria-label="Username"
+                                        aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                Unit
+                                <select class="form-control">
+                                    <option>in</option>
+                                    <option>cm</option>
+                                    <option>m</option>
+                                    <option>ft</option>
+                                    <option>yd</option> 
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                Waist (abdomen)
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" aria-label="Username"
+                                        aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                Unit
+                                <select class="form-control">
+                                    <option>in</option>
+                                    <option>cm</option>
+                                    <option>m</option>
+                                    <option>ft</option>
+                                    <option>yd</option> 
+                                </select>
+                            </div>
+                            <div class="col">
+                                Hip
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" aria-label="Username"
+                                        aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col">
+                                Unit
+                                <select class="form-control">
+                                    <option>in</option>
+                                    <option>cm</option>
+                                    <option>m</option>
+                                    <option>ft</option>
+                                    <option>yd</option> 
+                                </select>
+                            </div>
+                            <div class="col">
+                                <br>
+                                <button type="button" class="btn btn-success">Calculate</button>
+                            </div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <app-info [info]="info"></app-info>
+                </div>
+            </div>
+            <div class="col">
+                <app-date-and-time-list></app-date-and-time-list>
+            </div>
+        </div>
+    </div>
+</div>

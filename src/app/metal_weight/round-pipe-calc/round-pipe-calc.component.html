@@ -1,0 +1,130 @@
+<div style="background-color: aquamarine;">
+    <div class="container">
+        <div class="row bg-light my-3">
+            <h1>
+                <b>
+                    Calculate Round Pipe Weight
+                </b>
+            </h1>
+        </div>
+        <div class="row bg-light py-3">
+            <div class="col-2">
+                <img src="https://easy-calc.com/Metal-Weight/MetalWeightImages/Pipe-Bar.PNG" style="height:120px;">
+            </div>
+            <div class="col">
+                <p style="font-size: large;">Pipes are round, cylindrical shapes that are hollow. They are used
+                    primarily for the transference of either fluids or gas. All pipes are measured by their Nominal
+                    inside Diameter and their Wall Thickness, which is based on a Schedule number. The higher the
+                    schedule number, the thicker the wall.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9">
+                <div class="row my-3">
+                    <div class="col bg-light">
+                        <div class="mt-2"> <i class="fa fa-balance-scale"></i> <b> Calculate Round Pipe Weight</b></div>
+                        <hr>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col my-3">
+                                    <img src="https://easy-calc.com/Metal-Weight/MetalWeightImages/Pipe.PNG" alt=""
+                                        style="height: 180px;">
+                                </div>
+                                <div class="col">
+                                    <p class="lh-lg">
+                                        Select Material
+                                        <select class="form-control border" [(ngModel)]="calc.density">
+                                            <option selected="selected" value="7850">Steel</option>
+                                            <option value="7860">Iron </option>
+                                            <option value="2730">Aluminum </option>
+                                            <option value="8550">Brass </option>
+                                            <option value="8880">Bronze </option>
+                                            <option value="1150">Cast Polyamide </option>
+                                            <option value="8930">Copper </option>
+                                            <option value="7100">Chromium </option>
+                                            <option value="1420">Derlin </option>
+                                            <option value="1400">Fiber </option>
+                                            <option value="19360">Gold </option>
+                                            <option value="11370">Lead </option>
+                                            <option value="1700">Magnesium </option>
+                                            <option value="10280">Molybdenum </option>
+                                            <option value="8850">Nickel </option>
+                                            <option value="2150">Platinum </option>
+                                            <option value="1140">Polyamide </option>
+                                            <option value="0950">Polythene </option>
+                                            <option value="1060">Silver </option>
+                                            <option value="7940">SS 316/321</option>
+                                            <option value="7710">SS 410/430 </option>
+                                            <option value="7920">SS 304/310 </option>
+                                            <option value="4500">Titanium </option>
+                                            <option value="7500">Tin </option>
+                                            <option value="2200">Teflon </option>
+                                            <option value="7200">Zinc </option>
+                                            <option value="6510">Zirconium </option>
+                                        </select>
+                                        Diameter<sub>(d)</sub>
+                                        <br>
+                                        <input [(ngModel)]="calc.diameter" type="number" name="" id=""><br>
+                                        Thickness<sub>(t)</sub><br>
+                                        <input [(ngModel)]="calc.thickness" type="number" name="" id=""><br>
+                                        Length<sub>(l)</sub><br>
+                                        <input [(ngModel)]="calc.length" type="number" name="" id=""><br>
+                                        Number of Pieces<sub>(q)</sub><br>
+                                        <input [(ngModel)]="calc.quantity" type="number" name="" id=""><br>
+                                        <br>
+                                        <span class="col">
+                                            <button (click)="calc.submit()" type="button">Calculate</button>
+                                            <button>Clear</button>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <p class="lh-lg">
+                                        Density <br>
+                                        <input disabled [value]="calc.density" type="number"> <br>
+                                        Unit <br>
+                                        <select [(ngModel)]="calc.unitMultiplierDiameter" class="btn btn-light form-control border">
+                                            <option value="0.001">mm</option>
+                                            <option value="0.01">cm</option>
+                                            <option value="0.0254">in</option>
+                                        </select>
+                                        Unit <br>
+                                        <select [(ngModel)]="calc.unitMultiplierThickness" class="btn btn-light form-control border">
+                                            <option value="0.001">mm</option>
+                                            <option value="0.01">cm</option>
+                                            <option value="0.0254">in</option>
+                                        </select>
+                                        Unit <br>
+                                        <select [(ngModel)]="calc.unitMultiplierLength" class="btn btn-light form-control border">
+                                            <option value="1">m</option>
+                                            <option value="0.001">mm</option>
+                                            <option value="0.01">cm</option>
+                                            <option value="0.0254">in</option>
+                                            <option value="0.3048">ft</option>
+                                            <option value="0.9144">yd</option>
+                                        </select><br>
+                                        Price (per 1kg) <br>
+                                        <input [(ngModel)]="calc.amount" type="number" name="" id="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <app-weight-list [info]="calc.info"></app-weight-list>
+                    </div>
+                    <div class="row mt-3">
+                        <app-how-to-calc [info]="info2"></app-how-to-calc>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <app-list-calc></app-list-calc>
+            </div>
+        </div>
+        <div class="row">
+            <app-application-calc [info]="info3"></app-application-calc>
+        </div>
+    </div>
+</div>

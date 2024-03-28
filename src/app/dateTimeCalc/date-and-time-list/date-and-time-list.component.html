@@ -1,0 +1,8 @@
+<div class="col m-3 px-2 bg-light">
+    <div class="py-3"><i class="fa fa-calculator"></i><b> Other Calculators</b></div>
+    <hr>    
+    <div *ngFor="let item of calc" class=" ">
+        <a class="nav-item nav-link " href="#"><i class="{{item.icon}}"></i> {{item.title}}</a>
+        <hr>
+    </div>
+</div>

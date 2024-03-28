@@ -1,0 +1,131 @@
+<div class="">
+    <div class="col mb-4">
+        logo
+    </div>
+    <div class="col">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark px-5">
+            <a class="px-3" href="#"><i class="fa-solid fa-house"></i></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0 px-2">
+                    <li class="nav-item px-2">
+                        <a class="nav-link " href="#" (mouseenter)="isHidden = !isHidden"><i
+                                class="fa-solid fa-money-bill"></i> Financial
+                            Calculator</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-calculator"></i> Math Calculator</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-scale-balanced"></i> Metal Weight</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-anchor"></i>
+                            Structural Steel Section</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-table-cells"></i> Other Calculator</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <ng-container *ngIf="isHidden" style="height: min-content;">
+            <div class="container bg-dark custcolor" (mouseleave)="isHidden = !isHidden">
+                <div class="row">
+                    <div class="col">
+                        <b>Loan EMI Calculator</b><br><br>
+                        <p class="lh-lg">
+                            <a href="#" class="nav-link" *ngFor="let i of LoanEmiCalc">
+                                {{i}}<br>
+                            </a>
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="col">
+                        <b>SIP Calculator</b><br><br>
+                        <p class="lh-lg">
+                            <a href="#" class="nav-link" *ngFor="let i of SipCalc">
+                                {{i}}<br>
+                            </a>
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="col">
+                        <b>Simple Interest Calculator</b><br><br>
+                        <p class="lh-lg">
+                            <a href="#" class="nav-link" *ngFor="let i of SimpleIntCalc">
+                                {{i}}<br>
+                            </a>
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="col">
+                        <b>Compound Interest Calculator</b><br><br>
+                        <p class="lh-lg">
+                            <a href="#" class="nav-link" *ngFor="let i of CompoundIntCalc">
+                                {{i}}<br>
+                            </a>
+                        </p>
+                        <hr>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <b>CAGR Calculator</b><br><br>
+                            <p class="lh-lg">
+                                <a href="#" class="nav-link" *ngFor="let i of Cagrcalc">
+                                    {{i}}<br>
+                                </a>
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="col">
+                            <b>RD Calculator</b><br><br>
+                            <p class="lh-lg">
+                                <a href="#" class="nav-link" *ngFor="let i of RdCalc">
+                                    {{i}}<br>
+                                </a>
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="col">
+                            <b>Debt Reduction Calculator</b><br><br>
+                            <p class="lh-lg">
+                                <a href="#" class="nav-link" *ngFor="let i of DebtReductionCalc">
+                                    {{i}}<br>
+                                </a>
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="col">
+                            <b>Percentage Calculator</b><br><br>
+                            <p class="lh-lg">
+                                <a href="#" class="nav-link" *ngFor="let item of percentcalc">
+                                    {{item}}<br>
+                                </a>
+                                <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <b>BM Amount Calculator</b>
+                        </div>
+                        <div class="col">
+                            <p class="lh-lg">
+                                <b>CII Calculator</b><br>
+                                <b>Advance CII Calculator</b><br>
+                                <b>Gratuity Calculator</b><br>
+                            </p>
+                        </div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+
+</div>

@@ -1,0 +1,12 @@
+<div class="row p-3 bg-light">
+    <div class="row mb-3">
+        <span><i class="fa fa-industry"></i> <b> {{info.heading}}</b></span>
+        <hr>
+    </div>
+    <div class="row" *ngFor="let info of info.infos">
+        <b class="fs-7">{{info.title}}</b>
+        <br>
+        <p> {{info.desc}}</p>
+        <hr>
+    </div>
+</div>

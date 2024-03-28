@@ -1,0 +1,13 @@
+<div class="row p-2 my-3 bg-white ">
+    <h3 class=""><b><i class={{list.icon}}></i> {{list.heading}}</b></h3>
+    <hr>
+    <div class="my-2 row"
+        *ngFor="let item of list.items">
+        <div class="col border-bottom">
+            <a [routerLink]="item.link" class=" nav-link">
+                <i class={{item.icon}}></i>
+                {{item.name}}
+            </a>
+        </div>
+    </div>
+</div>

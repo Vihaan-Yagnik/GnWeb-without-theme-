@@ -1,0 +1,14 @@
+<div class="row p-3 bg-light">
+    <div class="row mb-3">
+        <span><i class="fa fa-calculator"></i> <b> {{info.heading}}</b></span>
+        <hr>
+    </div>
+    <div class="row" *ngFor="let info of info.infos">
+        <b class="fs-7">{{info.title}}</b>
+        <br>
+        <p> {{info.desc}}</p>
+        <br>
+        <h2><b class="fs-4">{{info.formula}}</b></h2>
+        <hr>
+    </div>
+</div>

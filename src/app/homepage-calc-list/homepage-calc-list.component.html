@@ -1,0 +1,16 @@
+<div class="row grid px-3 pt-2 " style="position: relative;">
+    <div class="col-md-4 col-sm-12 col-xs-12 grid-item ps-5 pe-5 py-3" *ngFor="let calc of calcs"
+        style="background-color: #ffff; border-radius: 2rem; border : 10px solid aliceblue; height: max-content; position: red; left: 0px; right: 0px;">
+        <h3 class="mx-2">{{calc.heading}}</h3>
+        <hr>
+        <div class="row my-2  " style="background-color: rgb(231, 233, 239);" *ngFor="let calc of calc.calcs">
+            <div class="col-12" style="display: flex; margin: 0; padding: 0; ">
+                <div class={{calc.colorStrip}} style="width: 5px; height: 100%;"></div>
+                <div class="ms-2 py-2">
+                    <i class={{calc.icon}}></i>
+                    {{calc.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

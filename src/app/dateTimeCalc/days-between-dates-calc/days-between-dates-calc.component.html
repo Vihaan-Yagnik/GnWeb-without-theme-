@@ -1,0 +1,57 @@
+<body>
+
+    <div class="container">
+        <div class="row bg-light">
+            <h1><b>Days Between Two Dates Calculator</b></h1>
+        </div>
+
+        <div class="row">
+            <div class="col-9">
+                <div class="row my-3 bg-light">
+                    <div class="row my-3">
+                        <span><i class="fa fa-calendar"></i> <b> Days Between Two Dates</b></span>
+                    </div>
+                    <div class="row my-3 lh-lg">
+                        <div class="col-4">
+                            Start Date
+                            <div class="input-group flex-nowrap">
+                                <input type="date" class="form-control" placeholder="Select start Date"
+                                    aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                        <div class="col">
+                            End Date
+                            <div class="input-group flex-nowrap">
+                                <input type="date" class="form-control" placeholder="Select end Date"
+                                    aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                        <div class="col-1 px-2 mx-2">
+                            <br>
+                            <button class="btn btn-success">Selected</button>
+                        </div>
+                        <div class="col">
+                            <br>
+                            <button class="btn btn-success">Exclude Selected</button>
+                        </div>
+                    </div>
+                    <div class="row px-2 my-2 justify-content-center">
+                        <div class="col"><input type="checkbox" name="Monday" id=""> Monday </div>
+                        <div class="col"><input type="checkbox" name="" id=""> Tuesday</div>
+                        <div class="col"><input type="checkbox" name="" id=""> Wednesday</div>
+                        <div class="col"><input type="checkbox" name="" id=""> Thursday</div>
+                        <div class="col"><input type="checkbox" name="" id=""> Friday</div>
+                        <div class="col"><input type="checkbox" name="" id=""> Saturday</div>
+                        <div class="col"><input type="checkbox" name="" id=""> Sunday</div>  
+                    </div>
+                </div>
+                <div class="row">
+                    <app-info [info] = "info"></app-info>
+                </div>
+            </div>
+            <div class="col">
+                <app-date-and-time-list></app-date-and-time-list>
+            </div>
+        </div>
+    </div>
+</body>

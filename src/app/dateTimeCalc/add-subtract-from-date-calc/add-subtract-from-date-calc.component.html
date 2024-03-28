@@ -1,0 +1,63 @@
+<body>
+    <div class="container">
+        <div class="row bg-light my-3">
+            <h1>
+                <b>
+                    Add Subtract From Date Calculator
+                </b>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-9">
+                <div class="row bg-light my-3 py-3">
+                    <div class="row">
+                        <h4><i class="fa fa-clock"></i> Add or Subtract From Date</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Start Date
+                            <div class="input-group flex-nowrap">
+                                <input type="date" class="form-control" aria-label="Username"
+                                    aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                        <div class="col">
+                            Days
+                            <div class="input-group flex-nowrap">
+                                <input type="text" class="form-control" aria-label="Username" placeholder="Enter Days"
+                                    aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                        <div class="col">
+                            Week
+                            <div class="input-group flex-nowrap">
+                                <input type="week" class="form-control" aria-label="Username"placeholder="Enter Weeks"
+                                    aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                        <div class="col">
+                            Month
+                            <div class="input-group flex-nowrap">
+                                <input type="month" class="form-control" placeholder="Enter Months"
+                                    aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <br>
+                                <button type="button" class="btn btn-success">+Add</button>
+                        </div>
+                        <div class="col">
+                            <br>
+                                <button type="button" class="btn btn-danger">- Subtract</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <app-info [info]="info"></app-info>
+                </div>
+            </div>
+            <div class="col">
+                <app-date-and-time-list></app-date-and-time-list></div>
+        </div>
+    </div>
+</body>
